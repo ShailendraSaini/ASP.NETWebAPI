@@ -1,0 +1,60 @@
+﻿<script src="~/Scripts/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="~/Scripts/MyFunctions.js"></script>
+
+<table border="1">
+    <tr>
+        <td>
+            <h1 style="color: green">Get All Employees </h1>
+            <button id="btnAllEmployee" onclick="GetAllEmployees();return false;">Get All Employees</button><br>
+            <div id="divDisplayAllEmployees"></div>              
+        </td>
+        <td>
+            <h1 style="color: green">Get Single Employee Record</h1>
+            Enter EmployeeId:<input id="txtSingleEmployeeId" type="text" />
+            <button id="btnSingleEmployee" onclick="GetSingleEmployee();return false;">Get Single Employee Record</button><br>
+            <div id="divDisplaySingleEmployee"></div>             
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1 style="color: green">Add/Update Employee</h1>
+                <table border="1">
+                    <tr>
+                        <td>Employee Id</td>
+                        <td><input id="txtEmployeeId" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Name</td>
+                        <td><input id="txtEmployeeName" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Gender</td>
+                        <td>
+                                <select id="optGender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee Age</td>
+                        <td><input id="txtEmployeeAge" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Salary</td>
+                        <td><input id="txtEmployeeSalary" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><button id="btnPostEmployee" onclick="AddEmployee()">Add New Employee</button></td>
+                        <td><button id="btnPutEmployee" onclick="UpdateEmployee()">Update Employee</button></td>
+                    </tr>
+                </table>   
+        </td>
+
+        <td>
+            <h1 style="color: green">Delete Employee</h1>
+                Enter EmployeeId:<input id="txtEmpId" type="text" />
+                <button id="btnDeleteEmployee" onclick="DeleteEmployee();return false;">Delete Employee</button><br> 
+        </td>
+    </tr>
+</table>
